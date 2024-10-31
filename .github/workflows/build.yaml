@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Setup latex
         run: |
-          sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-generic
+          sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-fonts-extra texlive-plain-generic
       - name: Compile latex file
         run: |
           xelatex resume.tex
